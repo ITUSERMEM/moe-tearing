@@ -1,0 +1,20 @@
+# Model weights
+weights/
+weights_best/
+
+# Log files
+logs/
+
+# LoRA weight files (100MB+)
+results/*_lora.pt
+
+# Merged model checkpoints
+scripts/../weights/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment
+.env
+*.safetensors

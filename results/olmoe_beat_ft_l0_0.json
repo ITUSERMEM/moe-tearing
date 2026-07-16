@@ -1,0 +1,287 @@
+{
+  "model": "allenai/OLMoE-1B-7B-0125",
+  "lambda": 0.0,
+  "steps": 200,
+  "target_layer": 8,
+  "M2_before": 0.694573424756527,
+  "M2_after": 0.6940166242420673,
+  "M2_reduction": 0.0008016438501873127,
+  "before_val_loss": 2.518517351150513,
+  "after_val_loss": 2.4116216897964478,
+  "best_val_loss": 2.1897589206695556,
+  "trainable_params_M": 402.653184,
+  "before": {
+    "full": [
+      {
+        "layer": 0,
+        "n_tokens": 5120,
+        "tear_median": 0.6942441463470459,
+        "cos_median": 0.05586656183004379,
+        "boundary_frac_lt0.05": 0.54140625,
+        "pairwise_cos_avg": 0.018836913630366325
+      },
+      {
+        "layer": 1,
+        "n_tokens": 5120,
+        "tear_median": 0.7005720138549805,
+        "cos_median": 0.038144346326589584,
+        "boundary_frac_lt0.05": 0.6080078125,
+        "pairwise_cos_avg": 0.014935942366719246
+      },
+      {
+        "layer": 2,
+        "n_tokens": 5120,
+        "tear_median": 0.7004760503768921,
+        "cos_median": 0.0319681353867054,
+        "boundary_frac_lt0.05": 0.516796875,
+        "pairwise_cos_avg": 0.010451511479914188
+      },
+      {
+        "layer": 3,
+        "n_tokens": 5120,
+        "tear_median": 0.70331871509552,
+        "cos_median": 0.025223087519407272,
+        "boundary_frac_lt0.05": 0.4642578125,
+        "pairwise_cos_avg": 0.008681266568601131
+      },
+      {
+        "layer": 4,
+        "n_tokens": 5120,
+        "tear_median": 0.7028274536132812,
+        "cos_median": 0.02570953592658043,
+        "boundary_frac_lt0.05": 0.4720703125,
+        "pairwise_cos_avg": 0.010513344779610634
+      },
+      {
+        "layer": 5,
+        "n_tokens": 5120,
+        "tear_median": 0.701784610748291,
+        "cos_median": 0.029292035847902298,
+        "boundary_frac_lt0.05": 0.4552734375,
+        "pairwise_cos_avg": 0.012074439786374569
+      },
+      {
+        "layer": 6,
+        "n_tokens": 5120,
+        "tear_median": 0.702430248260498,
+        "cos_median": 0.024321718141436577,
+        "boundary_frac_lt0.05": 0.447265625,
+        "pairwise_cos_avg": 0.009757131338119507
+      },
+      {
+        "layer": 7,
+        "n_tokens": 5120,
+        "tear_median": 0.7032361030578613,
+        "cos_median": 0.023067500442266464,
+        "boundary_frac_lt0.05": 0.4072265625,
+        "pairwise_cos_avg": 0.007798027712851763
+      },
+      {
+        "layer": 8,
+        "n_tokens": 5120,
+        "tear_median": 0.7035720348358154,
+        "cos_median": 0.02185213938355446,
+        "boundary_frac_lt0.05": 0.3970703125,
+        "pairwise_cos_avg": 0.007666729390621185
+      },
+      {
+        "layer": 9,
+        "n_tokens": 5120,
+        "tear_median": 0.7039599418640137,
+        "cos_median": 0.022489475086331367,
+        "boundary_frac_lt0.05": 0.3306640625,
+        "pairwise_cos_avg": 0.00715946638956666
+      },
+      {
+        "layer": 10,
+        "n_tokens": 5120,
+        "tear_median": 0.7083152532577515,
+        "cos_median": 0.01448861788958311,
+        "boundary_frac_lt0.05": 0.3009765625,
+        "pairwise_cos_avg": 0.004022956360131502
+      },
+      {
+        "layer": 11,
+        "n_tokens": 5120,
+        "tear_median": 0.7102293968200684,
+        "cos_median": 0.010283831506967545,
+        "boundary_frac_lt0.05": 0.3359375,
+        "pairwise_cos_avg": 0.003507911693304777
+      },
+      {
+        "layer": 12,
+        "n_tokens": 5120,
+        "tear_median": 0.7085304260253906,
+        "cos_median": 0.01639840379357338,
+        "boundary_frac_lt0.05": 0.30078125,
+        "pairwise_cos_avg": 0.004745675716549158
+      },
+      {
+        "layer": 13,
+        "n_tokens": 5120,
+        "tear_median": 0.7087336778640747,
+        "cos_median": 0.012984142638742924,
+        "boundary_frac_lt0.05": 0.330859375,
+        "pairwise_cos_avg": 0.0038456888869404793
+      },
+      {
+        "layer": 14,
+        "n_tokens": 5120,
+        "tear_median": 0.696314811706543,
+        "cos_median": 0.05003592371940613,
+        "boundary_frac_lt0.05": 0.282421875,
+        "pairwise_cos_avg": 0.027642421424388885
+      },
+      {
+        "layer": 15,
+        "n_tokens": 5120,
+        "tear_median": 0.5646299123764038,
+        "cos_median": 0.3812534213066101,
+        "boundary_frac_lt0.05": 0.3060546875,
+        "pairwise_cos_avg": 0.21021714806556702
+      }
+    ]
+  },
+  "after": {
+    "full": [
+      {
+        "layer": 0,
+        "n_tokens": 5120,
+        "tear_median": 0.6942441463470459,
+        "cos_median": 0.05586656183004379,
+        "boundary_frac_lt0.05": 0.54140625,
+        "pairwise_cos_avg": 0.019190730527043343
+      },
+      {
+        "layer": 1,
+        "n_tokens": 5120,
+        "tear_median": 0.7005720138549805,
+        "cos_median": 0.038144346326589584,
+        "boundary_frac_lt0.05": 0.6080078125,
+        "pairwise_cos_avg": 0.01389282289892435
+      },
+      {
+        "layer": 2,
+        "n_tokens": 5120,
+        "tear_median": 0.7004760503768921,
+        "cos_median": 0.0319681353867054,
+        "boundary_frac_lt0.05": 0.516796875,
+        "pairwise_cos_avg": 0.012395787984132767
+      },
+      {
+        "layer": 3,
+        "n_tokens": 5120,
+        "tear_median": 0.70331871509552,
+        "cos_median": 0.025223087519407272,
+        "boundary_frac_lt0.05": 0.4642578125,
+        "pairwise_cos_avg": 0.008856728672981262
+      },
+      {
+        "layer": 4,
+        "n_tokens": 5120,
+        "tear_median": 0.7028274536132812,
+        "cos_median": 0.02570953592658043,
+        "boundary_frac_lt0.05": 0.4720703125,
+        "pairwise_cos_avg": 0.011319860816001892
+      },
+      {
+        "layer": 5,
+        "n_tokens": 5120,
+        "tear_median": 0.701784610748291,
+        "cos_median": 0.029292035847902298,
+        "boundary_frac_lt0.05": 0.4552734375,
+        "pairwise_cos_avg": 0.010859874077141285
+      },
+      {
+        "layer": 6,
+        "n_tokens": 5120,
+        "tear_median": 0.702430248260498,
+        "cos_median": 0.024321718141436577,
+        "boundary_frac_lt0.05": 0.447265625,
+        "pairwise_cos_avg": 0.009267967194318771
+      },
+      {
+        "layer": 7,
+        "n_tokens": 5120,
+        "tear_median": 0.7032361030578613,
+        "cos_median": 0.023067500442266464,
+        "boundary_frac_lt0.05": 0.4072265625,
+        "pairwise_cos_avg": 0.00793187040835619
+      },
+      {
+        "layer": 8,
+        "n_tokens": 5120,
+        "tear_median": 0.7027691006660461,
+        "cos_median": 0.02493942156434059,
+        "boundary_frac_lt0.05": 0.3970703125,
+        "pairwise_cos_avg": 0.006992320995777845
+      },
+      {
+        "layer": 9,
+        "n_tokens": 5120,
+        "tear_median": 0.7043204307556152,
+        "cos_median": 0.02275657281279564,
+        "boundary_frac_lt0.05": 0.322265625,
+        "pairwise_cos_avg": 0.006716896779835224
+      },
+      {
+        "layer": 10,
+        "n_tokens": 5120,
+        "tear_median": 0.7083960771560669,
+        "cos_median": 0.014030939899384975,
+        "boundary_frac_lt0.05": 0.2908203125,
+        "pairwise_cos_avg": 0.004649606067687273
+      },
+      {
+        "layer": 11,
+        "n_tokens": 5120,
+        "tear_median": 0.710308313369751,
+        "cos_median": 0.010538699105381966,
+        "boundary_frac_lt0.05": 0.3392578125,
+        "pairwise_cos_avg": 0.0034448690712451935
+      },
+      {
+        "layer": 12,
+        "n_tokens": 5120,
+        "tear_median": 0.7081774473190308,
+        "cos_median": 0.017032235860824585,
+        "boundary_frac_lt0.05": 0.3177734375,
+        "pairwise_cos_avg": 0.004316885024309158
+      },
+      {
+        "layer": 13,
+        "n_tokens": 5120,
+        "tear_median": 0.708391547203064,
+        "cos_median": 0.014265638776123524,
+        "boundary_frac_lt0.05": 0.3458984375,
+        "pairwise_cos_avg": 0.004187776241451502
+      },
+      {
+        "layer": 14,
+        "n_tokens": 5120,
+        "tear_median": 0.695331335067749,
+        "cos_median": 0.05304288864135742,
+        "boundary_frac_lt0.05": 0.2978515625,
+        "pairwise_cos_avg": 0.03513062745332718
+      },
+      {
+        "layer": 15,
+        "n_tokens": 5120,
+        "tear_median": 0.5576823949813843,
+        "cos_median": 0.3977054953575134,
+        "boundary_frac_lt0.05": 0.3224609375,
+        "pairwise_cos_avg": 0.23583155870437622
+      }
+    ]
+  },
+  "val_loss_trace": [
+    {
+      "step": 100,
+      "val_loss": 2.1999324321746827
+    },
+    {
+      "step": 200,
+      "val_loss": 2.1897589206695556
+    }
+  ]
+}

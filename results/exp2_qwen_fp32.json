@@ -1,0 +1,32 @@
+{
+  "experiment": "exp2_qwen_fp32",
+  "model": "/home/newtry/qwen",
+  "k": 4,
+  "dtype": "fp32",
+  "n_tokens": 200,
+  "n_valid": 192,
+  "qwen_fp32": {
+    "dflip_median": 1.1080045325684296e-08,
+    "ddir_median": 3.5344370985512796e-08,
+    "dflip_mean": 3.2134771358928914e-08,
+    "ddir_mean": 3.826086892916071e-06,
+    "cross_median": 9.855010674186815e-08,
+    "near_median": 8.593679012847133e-08,
+    "orth_median": 7.617341424293045e-08,
+    "dom_ratio": 0.31348825899959754,
+    "wilcoxon_p": 0.005074812868767895,
+    "n_dflip_pos": 106,
+    "n_dflip_neg": 86
+  },
+  "gap_vs_olmoe": {
+    "olmoe_fp32_over_qwen_fp32": 99277.57221805994,
+    "olmoe_bf16_over_qwen_fp32": 72201.87070404358,
+    "olmoe_fp32_dflip": 0.0011,
+    "olmoe_bf16_dflip": 0.0008
+  },
+  "verdict_script_logic": "FP32_PARTIAL",
+  "verdict": "FP32_NOISE_FLOOR_GAP_INFLATED_BF16",
+  "evidence_tier": "E",
+  "honest_reading": "Qwen fp32 next-token KL median ~1e-8 (cross 9.9e-8 / near 8.6e-8 / orth 7.6e-8), differences ~1e-8 near fp32 noise floor (machine epsilon 1.2e-7). dom_ratio 0.31x < 1: \u6cd5\u5411\u6270\u52a8 KL \u589e\u91cf (\u0394dir median 3.5e-8) > \u7ffb\u8f6c\u589e\u91cf (\u0394flip median 1.1e-8), \u4e0e\u8bba\u6587\u7ffb\u8f6c\u4e3b\u5bfc (35-924x) \u65b9\u5411\u53cd\u8f6c, \u4f46\u56e0\u4e24\u8005\u90fd\u5728\u566a\u58f0\u5e95\u8be5\u53cd\u8f6c\u4e0d\u53ef\u4fe1. ratio_fp32 99277x \u8fdc\u975e bf16 35x: fp32 \u4e0b Qwen \u0394flip \u584c\u5230\u566a\u58f0\u5e95, \u8bf4\u660e bf16 \u6d4b\u5f97\u7684 35x gap \u4e2d Qwen \u4fa7 \u0394flip \u88ab bf16 \u91cf\u5316\u566a\u58f0\u62ac\u9ad8 (\u547c\u5e94 C' \u91cf\u5316\u8bf1\u53d1 5.2% \u7ffb\u8f6c). Wilcoxon p=0.005 (\u0394flip>0 \u663e\u8457) \u4f46 median 1e-8 \u5728\u566a\u58f0\u5e95, \u663e\u8457\u6027\u4e0d\u4ee3\u8868\u6548\u5e94\u91cf\u53ef\u4fe1. limitation #3 \u4e0d\u80fd\u7b80\u5355\u5835\u4f4f: fp32 \u63ed\u793a bf16 35x gap \u90e8\u5206\u4f9d\u8d56 bf16 \u566a\u58f0\u5e95, \u9700\u964d\u7ea7\u8bba\u8ff0, \u975e FP32_VALIDATED. \u6309\u53cd\u6570\u636e\u4fee\u8865\u94c1\u5f8b\u4e0d\u91cd\u5199\u4e3a\u652f\u6301 35x.",
+  "note": "\u5b57\u6bb5\u540d\u4fee\u590d: experimentB row keys=cross/near/orth (\u975e kl_cross/kl_near/kl_orth). exp2.py line104-106 \u5df2\u4fee. \u805a\u5408\u91cd\u8dd1\u4e0d\u91cd\u8dd1\u6a21\u578b (\u590d\u7528\u5df2\u5199\u76d8 experimentB JSON 192 valid)."
+}

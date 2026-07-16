@@ -1,0 +1,10 @@
+{
+  "baseline": {
+    "hellaswag": 0.59,
+    "piqa": 0.82
+  },
+  "beat_lora": {
+    "hellaswag": 0.596,
+    "piqa": 0.816
+  }
+}

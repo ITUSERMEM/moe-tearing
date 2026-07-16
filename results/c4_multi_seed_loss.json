@@ -1,0 +1,74 @@
+{
+  "config": {
+    "device": "cuda",
+    "d": 384,
+    "n_head": 6,
+    "n_layer": 6,
+    "hidden": 1024,
+    "n_exp": 8,
+    "k": 2,
+    "block": 256,
+    "bs": 32,
+    "steps": 2000,
+    "lr": 0.003,
+    "wd": 0.1,
+    "grad_clip": 1.0,
+    "amp": true
+  },
+  "pams_eps": 0.008,
+  "pams_lambda": 0.01,
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "per_seed": [
+    {
+      "seed": 0,
+      "hard_end_loss": 2.41744,
+      "pams_end_loss": 2.20428,
+      "loss_delta": -0.21316000000000024,
+      "hard_A_flip": 0.0100860595703125,
+      "pams_A_flip": 0.0001068115234375,
+      "flip_reduction": 0.989409984871407
+    },
+    {
+      "seed": 1,
+      "hard_end_loss": 2.1997999999999998,
+      "pams_end_loss": 2.13016,
+      "loss_delta": -0.0696399999999997,
+      "hard_A_flip": 0.0089111328125,
+      "pams_A_flip": 0.001068115234375,
+      "flip_reduction": 0.8801369863013698
+    },
+    {
+      "seed": 2,
+      "hard_end_loss": 2.3772200000000003,
+      "pams_end_loss": 1.88184,
+      "loss_delta": -0.4953800000000004,
+      "hard_A_flip": 0.0074310302734375,
+      "pams_A_flip": 0.0008697509765625,
+      "flip_reduction": 0.8829568788501027
+    },
+    {
+      "seed": 3,
+      "hard_end_loss": 2.4847,
+      "pams_end_loss": 2.1768799999999997,
+      "loss_delta": -0.3078200000000004,
+      "hard_A_flip": 0.0117034912109375,
+      "pams_A_flip": 0.000213623046875,
+      "flip_reduction": 0.9817470664928292
+    }
+  ],
+  "summary": {
+    "n_seeds": 4,
+    "n_pams_loss_lower": 4,
+    "n_pams_loss_higher": 0,
+    "mean_loss_delta": -0.2715000000000002,
+    "mean_flip_reduction": 0.9335627291289271
+  },
+  "verdict": "LOSS_NOT_INCREASED_TARGET_HELD",
+  "evidence_tier": "E",
+  "note": "\u591a seed \u672b\u6bb5\u5e73\u5747\u786e\u8ba4 PAMS loss \u4e0d\u589e. LOSS_NOT_INCREASED => \u76ee\u6807\u652f\u70b9\u592f\u5b9e (\u4e0e2.2\u533a\u5206\u5269\u76ee\u6807\u652f\u70b9\u6210\u7acb); LOSS_INCREASED => \u76ee\u6807\u652f\u70b9\u53d8\u5f31, PAMS \u9000\u5316\u4e3a2.2\u98ce\u9669."
+}

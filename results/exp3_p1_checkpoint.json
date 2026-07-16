@@ -1,0 +1,52 @@
+{
+  "experiment": "exp3_p1_checkpoint",
+  "k": 8,
+  "n_tokens": 300,
+  "n_ckpts": 3,
+  "per_ckpt": [
+    {
+      "ckpt": "allenai/OLMoE-1B-7B-0924@step5000-tokens20B",
+      "step": "5000",
+      "dflip_L8": 0.017333984375,
+      "ddir_L8": 0.0059967041015625,
+      "n_valid": 71,
+      "dflip_iqr": [
+        7.62939453125e-05,
+        0.02740478515625
+      ],
+      "a_file": "experimentA_ckpt0_5000.json"
+    },
+    {
+      "ckpt": "allenai/OLMoE-1B-7B-0924@step500000-tokens2097B",
+      "step": "500000",
+      "dflip_L8": 0.051055908203125,
+      "ddir_L8": 0.0028839111328125,
+      "n_valid": 42,
+      "dflip_iqr": [
+        6.103515625e-05,
+        0.077056884765625
+      ],
+      "a_file": "experimentA_ckpt1_500000.json"
+    },
+    {
+      "ckpt": "allenai/OLMoE-1B-7B-0924@main",
+      "step": "final",
+      "dflip_L8": 0.06390380859375,
+      "ddir_L8": 0.006378173828125,
+      "n_valid": 57,
+      "dflip_iqr": [
+        0.00018310546875,
+        0.076904296875
+      ],
+      "a_file": "experimentA_ckpt2_final.json"
+    }
+  ],
+  "trajectory": {
+    "dflip_range": 0.04656982421875,
+    "rel_change": 0.9121338912133892,
+    "dflip_median": 0.051055908203125
+  },
+  "verdict": "ACQUIRED",
+  "evidence_tier": "E",
+  "note": "P1 checkpoint-trajectory adjudication. \u0394flip@L8=median(cross-near) energy. flat->intrinsic (acquired falsified); changing->acquired (confirmed). \u9700 OLMoE \u65e9\u671f checkpoint (MTEAR_CKPTS). \u8bba\u6587 P1 'single GPU suffices'."
+}
